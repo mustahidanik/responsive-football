@@ -58,6 +58,7 @@ a{
     grid-row-gap: 27px;
     width: 1050px;
     margin-top: 70px;
+    margin-bottom: 80px;
 }
 .players{
     width: 300px;
@@ -68,6 +69,46 @@ a{
 .players .player img{
     width: 300px;
     height: 256px;
+}
+
+
+/* trending */
+h2{
+    background-color: #E02C6D;
+    color: white;
+    padding: 5px 20px;
+    margin-top: 50px;
+}
+.sports-album{
+    display: flex;
+}
+.frame{
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    margin-bottom: 120px;
+    padding: 10px;
+    box-shadow: 0 0 40px rgb(0,0,0,0.15);
+}
+.photo img{
+    width: 100%;
+}
+
+
+/* sign up */
+.email{
+    text-align: center;
+}
+.sign{
+    padding-left: 45%;
+}
+.sign-button{
+    background-image: linear-gradient(tomato, orange);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 20px;
 }
 
 
@@ -91,4 +132,26 @@ a{
 }
 .copy-right{
     text-align: center;
+}
+
+
+/* media query */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .main-players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .players{
+        flex-direction: column;
+    }
+     .frame{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+     .photos{
+        flex-direction: column;
+    }
 }
